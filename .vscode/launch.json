@@ -5,6 +5,24 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Home Assistant (with Custom Components)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "homeassistant",
+      "justMyCode": false,
+      "python": "/home/vscode/.local/ha-venv/bin/python",
+      "args": [
+        "--debug",
+        "-c",
+        "config"
+      ],
+      "preLaunchTask": "Compile English translations",
+      "env": {
+        "PYTHONPATH": "/workspaces/ha-chore-helper-ex:${env:PYTHONPATH}"
+      },
+      "console": "integratedTerminal"
+    },
+    {
       "name": "Home Assistant",
       "type": "debugpy",
       "request": "launch",

@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../ha-chore-helper-ex"
+		}
+	],
+	"settings": {
+		"python.defaultInterpreterPath": "/home/vscode/.local/ha-venv/bin/python",
+		"python.terminal.activateEnvironment": false
+	}
+}

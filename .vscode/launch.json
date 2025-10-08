@@ -17,10 +17,10 @@
         "config"
       ],
       "preLaunchTask": "Compile English translations",
+      "console": "integratedTerminal",
       "env": {
-        "PYTHONPATH": "/workspaces/ha-chore-helper-ex:${env:PYTHONPATH}"
-      },
-      "console": "integratedTerminal"
+        "PYTHONPATH": "${workspaceFolder}/config/custom_components:${env:PYTHONPATH}"
+      }
     },
     {
       "name": "Home Assistant",

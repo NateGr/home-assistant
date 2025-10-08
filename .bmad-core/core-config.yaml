@@ -1,0 +1,33 @@
+markdownExplorer: true
+qa:
+  qaLocation: /workspaces/ha-chore-tracker/docs/qa
+prd:
+  prdFile: /workspaces/ha-chore-tracker/docs/prd.md
+  prdVersion: v4
+  prdSharded: false
+  prdShardedLocation: /workspaces/ha-chore-tracker/docs/prd
+  epicFilePattern: epic-{n}*.md
+architecture:
+  architectureFile: /workspaces/ha-chore-tracker/docs/architecture.md
+  architectureVersion: v4
+  architectureSharded: false
+  architectureShardedLocation: /workspaces/ha-chore-tracker/docs/architecture
+customTechnicalDocuments:
+  - /workspaces/home-assistant/context.md
+  - /workspaces/home-assistant/.github/copilot-instructions.md
+devLoadAlwaysFiles:
+  - /workspaces/ha-chore-tracker/docs/architecture.md
+  - /workspaces/ha-chore-tracker/docs/prd.md
+  - /workspaces/ha-chore-tracker/docs/brief.md
+  - /workspaces/home-assistant/context.md
+devDebugLog: /workspaces/home-assistant/.ai/debug-log.md
+devStoryLocation: /workspaces/ha-chore-tracker/docs/stories
+slashPrefix: BMad
+projectContext:
+  primaryRepo: /workspaces/ha-chore-tracker
+  debugEnvironment: /workspaces/home-assistant
+  customComponent: chore_tracker
+  developmentFocus: "ha-chore-tracker custom component development"
+  workingDirectory: /workspaces/ha-chore-tracker
+  readOnlyEnvironment: /workspaces/home-assistant
+  note: "ALL code changes go in ha-chore-tracker, home-assistant is for debugging only"

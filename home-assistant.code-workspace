@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../ha-chore-tracker"
+		},
+		{
+			"path": "../HA-Dev"
 		}
 	],
 	"settings": {

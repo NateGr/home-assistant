@@ -18,10 +18,8 @@
     "--security-opt",
     "label=disable"
   ],
-  // Update both source and target repo names below when mounting a different sibling integration repo.
   "mounts": [
-    "source=${localWorkspaceFolder}/../ha-chore-tracker,target=/workspaces/ha-chore-tracker,type=bind,consistency=cached",
-    "source=${localWorkspaceFolder}/../HA-Dev,target=/workspaces/HA-Dev,type=bind,consistency=cached"
+    "source=${localWorkspaceFolder}/projects,target=/projects,type=bind,consistency=cached"
   ],
   "customizations": {
     "vscode": {

@@ -1,0 +1,4 @@
+# Ignore project checkouts, but keep the folder documentation and ignore rules.
+/*
+!README.md
+!.gitignore

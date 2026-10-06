@@ -1,17 +1,14 @@
 {
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "../ha-chore-tracker"
-		},
-		{
-			"path": "../HA-Dev"
-		}
-	],
-	"settings": {
-		"python.defaultInterpreterPath": "/home/vscode/.local/ha-venv/bin/python",
-		"python.terminal.activateEnvironment": false
-	}
+  "folders": [
+    {
+      "path": ".",
+    },
+    {
+      "path": "../../projects/ha-chore-tracker",
+    },
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "/home/vscode/.local/ha-venv/bin/python",
+    "python.terminal.activateEnvironment": false,
+  },
 }

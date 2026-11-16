@@ -3,7 +3,7 @@
   "context": "..",
   "dockerFile": "../Dockerfile.dev",
   "postCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder} && script/setup",
-  "postStartCommand": "script/bootstrap",
+  "postStartCommand": "script/bootstrap && bash .devcontainer/link-custom-component.sh /workspaces/sh_chore_tracker/custom_components/sh_chore_tracker '${containerWorkspaceFolder}/config/custom_components/sh_chore_tracker'",
   "containerEnv": {
     "PYTHONASYNCIODEBUG": "1"
   },
@@ -19,7 +19,9 @@
     "label=disable"
   ],
   "mounts": [
-    "source=${localWorkspaceFolder}/projects,target=/projects,type=bind,consistency=cached"
+    "source=${localWorkspaceFolder}/projects,target=/projects,type=bind,consistency=cached",
+    "source=${localWorkspaceFolder}/../sh_chore_tracker,target=/workspaces/sh_chore_tracker,type=bind,consistency=cached",
+    "source=${localWorkspaceFolder}/../HA-Dev,target=/workspaces/HA-Dev,type=bind,consistency=cached"
   ],
   "customizations": {
     "vscode": {

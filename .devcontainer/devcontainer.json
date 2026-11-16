@@ -3,7 +3,7 @@
   "context": "..",
   "dockerFile": "../Dockerfile.dev",
   "postCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder} && script/setup",
-  "postStartCommand": "script/bootstrap && bash .devcontainer/link-custom-component.sh /workspaces/sh_chore_tracker/custom_components/sh_chore_tracker '${containerWorkspaceFolder}/config/custom_components/sh_chore_tracker'",
+  "postStartCommand": "bash .devcontainer/link-custom-component.sh /workspaces/sh_chore_tracker/custom_components/sh_chore_tracker '${containerWorkspaceFolder}/config/custom_components/sh_chore_tracker'",
   "containerEnv": {
     "PYTHONASYNCIODEBUG": "1"
   },
